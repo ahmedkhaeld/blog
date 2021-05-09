@@ -42,28 +42,10 @@
                             $cat_id= $_GET['edit'];
                             include "includes/update_categories.php";
                         }
-                        
-                           
-                        
-                        
-                        
-                        
-                        
+
                         ?>
-
-
                         </div>    <!-- add category form   -->
-
-                        
-
-                           
-
-                       <div class="col-xs-6">
-
-
-                        
-
-
+                        <div class="col-xs-6">
                             <table class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
@@ -74,16 +56,15 @@
                                 <tbody>
                                 <?php 
                                 // find all categories query
-                              findAllCategories();
-                              ?>
+                                findAllCategories();
+                                ?>
 
                             <?php
 
                             // delete categories query
                             deleteCategories();
-                             
-                            ?>
-                               
+                            
+                            ?>                               
                                 </tbody>
                             </table>
 
