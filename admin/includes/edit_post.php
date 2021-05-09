@@ -51,7 +51,10 @@
       $query.= "WHERE post_id    = {$post_id} ";
 
       $update_post=mysqli_query($connection, $query);
-      confirmQuery($update_post);
+      confirmQuery($update_post); 
+      echo " <p class='bg-success'> Post Updated. <a href='../post.php?p_id={$the_post_id}'> View Post</a>
+      OR <a href='posts.php'> Edit More Posts</a></p>";
+      
 
 
 
@@ -131,7 +134,7 @@
      
      <div class="form-group">
         <label for="post_content">Post Content</label>
-        <textarea class="form-control "name="post_content" id="" 
+        <textarea class="form-control "name="post_content" id="body" 
         cols="30" rows="10"><?php echo $post_content; ?>  
         
         </textarea>
