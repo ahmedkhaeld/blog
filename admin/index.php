@@ -186,7 +186,7 @@ echo "<div class='huge'>$categories_count</div>";
          'Subscribers','Comments', 'Users', 'Categories'];
         $element_count=[$posts_count,$posts_draft_count,$comments_unapproved_count,
         $subscribers_count, $comments_count,$users_count,$categories_count];
-        for($i=0 ; $i<7; $i++){
+        for($i=0 ; $i<7 ; $i++){
             echo    "['{$element_text[$i]}'" . "," . "{$element_count[$i]}],";
 
           }
