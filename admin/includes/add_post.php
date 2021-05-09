@@ -31,17 +31,6 @@
   ?> 
 
 
-
-
-
-
-
-
-
-
-
-
-
    <form action="" method="post" enctype="multipart/form-data">    
      
      
@@ -72,11 +61,6 @@
       ?>
       </select>
       </div>
-          
-    
-       
-     
-     
 
       <div class="form-group">
       <label for="title">Post Author</label>
@@ -90,11 +74,9 @@
           <label for="post_status">Post Status</label>
           <input type="text" class="form-control" name="post_status">
 
-    
      </div>
      
-     
-     
+    
    <div class="form-group">
         <label for="post_image">Post Image</label>
          <input type="file"  name="image">
@@ -107,7 +89,7 @@
      
      <div class="form-group">
         <label for="post_content">Post Content</label>
-        <textarea class="form-control "name="post_content" id="" cols="30" rows="10">
+        <textarea class="form-control "name="post_content" id="editor" cols="30" rows="10">
         </textarea>
      </div>
      
