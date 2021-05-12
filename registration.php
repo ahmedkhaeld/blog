@@ -15,7 +15,7 @@
      $email    = mysqli_real_escape_string($connection,$email);
      $password =mysqli_real_escape_string($connection,$password);
      
-     // in the database the defualt of randsalt changed to As defined $2y$q0$iusesomecrazystring22
+     // in the database the defualt of randsalt changed to As defined $2y$q0$iusesomecrazystrings22
      $query="SELECT randsalt FROM users";
      $select_randsalt_query=mysqli_query($connection, $query);
      if(! $select_randsalt_query){
