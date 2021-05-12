@@ -2,6 +2,33 @@
  <?php  include "includes/header.php"; ?>
 
 
+ <?php 
+ if(isset($_POST['submit'])){
+     $username = $_POST['username'];
+     $email    = $_POST['email'];
+     $password = $_POST['password'];
+
+
+     $username = mysqli_real_escape_string($connection,$username);
+     $email    = mysqli_real_escape_string($connection,$email);
+     $password =mysqli_real_escape_string($connection,$password);
+     
+     // in the database the defualt of randsalt changed to As defined $2y$q0$iusesomecrazystring22
+     $query="SELECT randsalt FROM users";
+     $select_randsalt_query=mysqli_query($connection, $query);
+     if(! $select_randsalt_query){
+         die( "QUERY FAILED" . mysqli_error($connection));
+     }
+     while($row=mysqli_fetch_array($select_randsalt_query)){
+         
+     }
+
+ }
+ 
+ 
+ ?>
+
+
     <!-- Navigation -->
     
     <?php  include "includes/navigation.php"; ?>
