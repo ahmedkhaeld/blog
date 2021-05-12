@@ -77,7 +77,10 @@
 
       <div class="form-group">
 
-       // select option to choose post status
+       <!-- 
+
+          select option to choose post status
+       -->
           <select name="post_status" id="">
           <option value="draft">Post Status</option>
           <option value="published">Publish</option>
