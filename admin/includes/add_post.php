@@ -21,7 +21,8 @@
       '{$post_content}', '{$post_tags}', '{$post_status}')";
       $create_post_query = mysqli_query($connection, $query);
 
-      confirmQuery($create_post_query);  
+      confirmQuery($create_post_query);
+      // added post creation notice  after post is created  
      $the_post_id= mysqli_insert_id($connection);
       echo " <p class='bg-success'> Post Created. <a href='../post.php?p_id={$the_post_id}'> View Post</a>
       OR <a href='posts.php'> Edit More Posts</a></p>";
@@ -75,7 +76,8 @@
      
 
       <div class="form-group">
-       
+
+       // select option to choose post status
           <select name="post_status" id="">
           <option value="draft">Post Status</option>
           <option value="published">Publish</option>
